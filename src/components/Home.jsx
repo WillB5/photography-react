@@ -44,65 +44,67 @@ export default function Home() {
     <>
       <p class="display-3 text-center">About Me</p>
       <p class="display-6 text-center">
-        I have been a photographer since 2015. My main focus
+        I have been a photographer since 2015. My main focus is portrait
+        photography but I also branch out into street and nature photography.
       </p>
       <p class="display-3 text-center">My Favorite Photos</p>
-
-      {/* Display photos */}
-      <ul class="list-group list-group-horizontal-xxl">
-        {row3.map((item, index) => (
-          <li class="list-group-item p-2  list-group-item-dark">
-            <img
-              key={index}
-              //rework to resize for mobile
-              width={
-                window.innerWidth < 1400 || isMobile
-                  ? window.innerWidth
-                  : window.innerWidth / 2.05
-              }
-              src={item.image}
-              alt={item.title}
-              objectFit={"scale-down"}
-            ></img>
-          </li>
-        ))}
-      </ul>
-      <ul class="list-group list-group-horizontal-xxl">
-        {row1.map((item, index) => (
-          <li class="list-group-item p-2  list-group-item-dark">
-            <img
-              key={index + 3}
-              //rework to resize for mobile
-              width={
-                window.innerWidth < 1400 || isMobile
-                  ? window.innerWidth
-                  : window.innerWidth / 2.05
-              }
-              src={item.image}
-              alt={item.title}
-              objectFit={"scale-down"}
-            ></img>
-          </li>
-        ))}
-      </ul>
-      <ul class="list-group list-group-horizontal-xxl">
-        {row2.map((item, index) => (
-          <li class="list-group-item p-2  list-group-item-dark">
-            <img
-              key={index + 3}
-              //rework to resize for mobile
-              width={
-                window.innerWidth < 1400 || isMobile
-                  ? window.innerWidth
-                  : window.innerWidth / 2.05
-              }
-              src={item.image}
-              alt={item.title}
-              objectFit={"scale-down"}
-            ></img>
-          </li>
-        ))}
-      </ul>
+      <div class="text-center">
+        {/* Display photos */}
+        <ul class="list-group list-group-flush list-group-horizontal-xxl">
+          {row3.map((item, index) => (
+            <li class="list-group-item p-2 flex-grow-1 list-group-item-dark">
+              <img
+                key={index}
+                //rework to resize for mobile
+                width={
+                  window.innerWidth < 1400 || isMobile
+                    ? window.innerWidth
+                    : window.innerWidth / 2.05
+                }
+                src={item.image}
+                alt={item.title}
+                objectFit={"scale-down"}
+              ></img>
+            </li>
+          ))}
+        </ul>
+        <ul class="list-group list-group-flush list-group-horizontal-xxl">
+          {row1.map((item, index) => (
+            <li class="list-group-item p-2 flex-grow-1 list-group-item-dark">
+              <img
+                key={index + 3}
+                //rework to resize for mobile
+                width={
+                  window.innerWidth < 1400 || isMobile
+                    ? window.innerWidth
+                    : window.innerWidth / 2.05
+                }
+                src={item.image}
+                alt={item.title}
+                objectFit={"scale-down"}
+              ></img>
+            </li>
+          ))}
+        </ul>
+        <ul class="list-group list-group-flush list-group-horizontal-xxl">
+          {row2.map((item, index) => (
+            <li class="list-group-item p-2 flex-grow-1 list-group-item-dark">
+              <img
+                key={index + 3}
+                //rework to resize for mobile
+                width={
+                  window.innerWidth < 1400 || isMobile
+                    ? window.innerWidth
+                    : window.innerWidth / 2.05
+                }
+                src={item.image}
+                alt={item.title}
+                objectFit={"scale-down"}
+              ></img>
+            </li>
+          ))}
+        </ul>
+      </div>
     </>
   );
 }

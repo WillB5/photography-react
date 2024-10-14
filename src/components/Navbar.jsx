@@ -38,6 +38,14 @@ export default function Navbar({ page, setPage }) {
                 Home
               </a>
               <a
+                class={page == "Portfolio" ? "nav-link active" : "nav-link"}
+                aria-current="page"
+                href="#"
+                onClick={(event) => setPage("Portfolio")}
+              >
+                Portfolio
+              </a>
+              <a
                 class={page == "Contact" ? "nav-link active" : "nav-link"}
                 aria-current="page"
                 href="#"
