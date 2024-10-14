@@ -11,7 +11,7 @@ export default function Navbar({ page, setPage }) {
   console.log("Navbar Page: " + page);
   return (
     <>
-      <nav class="navbar navbar-expand-md bg-body-tertiary">
+      <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             Will Photography<i class="bi bi-camera p-2"></i>
