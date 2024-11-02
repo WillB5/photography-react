@@ -1,38 +1,41 @@
 import React from "react";
 import { isMobile } from "react-device-detect";
+//import photos
 import babygoat from "../images/babygoat.jpg";
+import macaw from "../images/macaw2.jpg";
+import water from "../images/waterdroplets.jpg";
+import cassie from "../images/cassie.jpg";
+import jasmine from "../images/Jasmine.jpg";
+import jasLamp from "../images/Jasmine_lampbw.jpg";
+import stockphoto from "../images/stockPhoto.jpg";
+//
 
 export default function Home() {
   //array with photo paths and titles
   const photos = [
     {
       title: "Baby Goat",
-      image: "src/images/babygoat.jpg",
+      image: babygoat,
     },
     {
       title: "Macaw",
-      image: { babygoat },
+      image: macaw,
     },
     {
       title: "Water",
-      image: "src/images/waterdroplets.jpg",
+      image: water,
     },
     {
-      title: "JasmineLamp",
-      image: "src/images/cassie.jpg",
+      title: "cassie",
+      image: cassie,
     },
     {
       title: "Jasmine",
-      image: "src/images/Jasmine.jpg",
+      image: jasmine,
     },
     {
       title: "JasmineLamp",
-      image: "src/images/Jasmine_lampbw.jpg",
-    },
-
-    {
-      title: "Stock Photo Style",
-      image: "src/images/stockPhoto.jpg",
+      image: jasLamp,
     },
   ];
 

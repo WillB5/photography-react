@@ -1,38 +1,55 @@
 import React from "react";
 import { isMobile } from "react-device-detect";
+//import photos
+import babygoat from "../images/babygoat.jpg";
+import macaw from "../images/macaw2.jpg";
+import water from "../images/waterdroplets.jpg";
+import cassie from "../images/cassie.jpg";
+import jasmine from "../images/Jasmine.jpg";
+import jasLamp from "../images/Jasmine_lampbw.jpg";
+import stockphoto from "../images/stockPhoto.jpg";
+//
 
 export default function Portfolio() {
   //array with photo paths, titles.
   //To Do: add tags, filter by tags.
+  //Tags: animals, portraits, nature/landscape
   const photos = [
     {
       title: "Baby Goat",
-      image: "src/images/babygoat.jpg",
+      image: babygoat,
+      tag: "animals",
     },
     {
       title: "Macaw",
-      image: "src/images/macaw2.jpg",
+      image: macaw,
+      tag: "animals",
     },
     {
       title: "Water",
-      image: "src/images/waterdroplets.jpg",
+      image: water,
+      tag: "nature/landscape",
     },
     {
-      title: "JasmineLamp",
-      image: "src/images/cassie.jpg",
+      title: "cassie",
+      image: cassie,
+      tag: "portraits",
     },
     {
       title: "Jasmine",
-      image: "src/images/Jasmine.jpg",
+      image: jasmine,
+      tag: "portraits",
     },
     {
       title: "JasmineLamp",
-      image: "src/images/Jasmine_lampbw.jpg",
+      image: jasLamp,
+      tag: "portraits",
     },
 
     {
       title: "Stock Photo Style",
-      image: "src/images/stockPhoto.jpg",
+      image: stockphoto,
+      tag: "portraits",
     },
   ];
 
@@ -41,6 +58,7 @@ export default function Portfolio() {
       <div class="text-center">
         {/* Display photos */}
         <ul class="list-group flex-grow-1 list-group-flush">
+          <li></li>
           {photos.map((item, index) => (
             <img
               class="text-center mx-auto p-2 align-self-center flex-grow-1"
