@@ -5,7 +5,7 @@ import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 
 function App() {
-  const [page, setPage] = useState("Home"); // Home, Contact
+  const [page, setPage] = useState("Home"); // Home, Contact, Portfolio
   console.log("Page: " + page);
   return (
     <>
