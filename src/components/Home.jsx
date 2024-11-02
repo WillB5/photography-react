@@ -1,5 +1,6 @@
 import React from "react";
 import { isMobile } from "react-device-detect";
+import babygoat from "../images/babygoat.jpg";
 
 export default function Home() {
   //array with photo paths and titles
@@ -10,7 +11,7 @@ export default function Home() {
     },
     {
       title: "Macaw",
-      image: "src/images/macaw2.jpg",
+      image: { babygoat },
     },
     {
       title: "Water",
