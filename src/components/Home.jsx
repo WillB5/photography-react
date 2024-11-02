@@ -7,7 +7,7 @@ import water from "../images/waterdroplets.jpg";
 import cassie from "../images/cassie.jpg";
 import jasmine from "../images/Jasmine.jpg";
 import jasLamp from "../images/Jasmine_lampbw.jpg";
-import stockphoto from "../images/stockPhoto.jpg";
+
 //
 
 export default function Home() {
